@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "playwright": "^1.45.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.14.9"
+  },
+  "scripts": {
+    "test:smoke":"npx playwright test --grep \"@smoke\"",
+    "test:regression": "npx playwright test --grep \"@regression\"",
+    "test:all":"npm run test:smoke && npm run test:regression"
+    
+
+  }
+}
